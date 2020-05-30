@@ -1,21 +1,21 @@
-# rippled-ws-client-dashboard
-
-Development Dashboard for npm package: [rippled-ws-client-pool](https://github.com/WietseWind/rippled-ws-client-pool)
-
-### Demo / latest build: [https://xrp.fans](https://xrp.fans)
+# xrp-playground
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn run dev
 
 # build for production with minification
-npm run build
+yarn run build
 
 # build for production and view the bundle analyzer report
-npm run build --report
+yarn run build --report
 ```
+
+### Credits
+
+This is a fork of @WietseWind's [rippled-ws-client-dashboard](https://github.com/WietseWind/rippled-ws-client-dashboard).
