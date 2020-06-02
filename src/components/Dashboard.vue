@@ -2,14 +2,14 @@
   <div class="hello" :class="{ testnet: connectedLedgerType !== 'live' }">
     <div class="row" v-if="connectedLedgerType !== 'live'">
       <div class="col-12">
-        <div class="pt-0 pb-0 alert alert-danger text-center"><b><code class="text-danger">TESTNET</code></b></div>
+        <div class="pt-0 pb-0 alert alert-danger text-center"><b><code class="text-danger">Testnet</code></b></div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <h3>
           <b class="float-right text-warning"><small><small><span class="text-muted">Last closed ledger </span></small></small>{{ ledger }}</b>
-          <b>XRPL Dev. Dashboard</b> <small><span class="text-warning">»</span> <small>Source: </small> <code><small><a href="https://github.com/WietseWind/rippled-ws-client-dashboard" target="_blank">rippled-ws-client-dashboard</a></small></code></small>
+          <b>XRP Workshop</b> <small><span class="text-warning">»</span> <small>Source: </small> <code><small><a href="https://github.com/intelliot/xrp-workshop" target="_blank">xrp-workshop</a></small></code></small>
         </h3>
       </div>
       <div class="col-12 margin-bottom-10">
@@ -38,10 +38,10 @@
           <br />
           <input ref="addserver" type="text" placeholder="Add server (hostname)" class="form-control" v-on:keydown.enter="addServer" v-model="addHostname" />
           <br />
-          <button @click="switchToTestnet()" class="btn btn-outline-danger pt-0 pb-0 btn-block text-center btn-xs">Switch to <b>TESTNET</b></button>
+          <button @click="switchToTestnet()" class="btn btn-outline-danger pt-0 pb-0 btn-block text-center btn-xs">Switch to <b>Testnet</b></button>
         </div>
         <div v-else>
-          <button @click="switchToLivenet()" class="btn btn-outline-success pt-0 pb-0 btn-block text-center btn-xs">Switch to <b>LIVENET</b></button>
+          <button @click="switchToLivenet()" class="btn btn-outline-success pt-0 pb-0 btn-block text-center btn-xs">Switch to <b>Mainnet</b></button>
         </div>
       </div>
       <div v-for="(c) in connections" v-bind:key="c.hostname" class="col-3" v-if="view === 'c'">
@@ -329,12 +329,9 @@
     <div class="row pt-0 pb-0">
       <div class="col-12 pt-0 pb-0 text-center byWietse">
         <div><small>
-          By <span class="text-muted"><a href="https://twitter.com/WietseWind" class="text-muted" target="_blank">@WietseWind</a></span>
-          -
-          Source:
-            <code><a href="https://github.com/WietseWind/rippled-ws-client-pool" class="text-muted" target="_blank">Connection Pool</a></code>
+          Fork of <span class="text-muted"><a href="https://twitter.com/WietseWind" class="text-muted" target="_blank">@WietseWind</a></span>'s <code><a href="https://github.com/WietseWind/rippled-ws-client-pool" class="text-muted" target="_blank">Connection Pool</a></code>
             /
-            <code><a href="https://github.com/WietseWind/rippled-ws-client-dashboard/blob/master/src/components/Dashboard.vue" class="text-muted" target="_blank">Dashboard</a></code> (Github)
+            <code><a href="https://github.com/WietseWind/rippled-ws-client-dashboard/blob/master/src/components/Dashboard.vue" class="text-muted" target="_blank">Dashboard</a></code> (GitHub)
           -
           <code><a href="https://www.xrptipbot.com/u:WietseWind/n:twitter" class="text-muted" target="_blank">Donations 😇</a></code>
         </small></div>
